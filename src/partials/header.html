@@ -1,1 +1,82 @@
-<header>Header</header>
+<header class="header">
+  <div class="container header-container">
+    <a class="header-logo-link" href="/src/index.html">
+      <img
+        class="header-icon-mobile"
+        src="/img/logo-mob.svg"
+        alt="logo"
+        width="84"
+        height="36"
+      />
+      <img
+        class="header-icon-desktop"
+        src="/img/logo-desk.svg"
+        alt="logo"
+        width="106"
+        height="45"
+      />
+    </a>
+    <button type="button" class="header-button">
+      <svg class="header-burger-icon" width="32" height="32">
+        <use href="/img/sprite.svg#icon-menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu">
+    <div class="container mobile-container">
+      <div class="mobile-header">
+        <a class="header-logo-link" href="/src/index.html">
+          <img
+            class="header-icon-mobile"
+            src="/img/logo-mob.svg"
+            alt="logo"
+            width="84"
+            height="36"
+          />
+        </a>
+        <button type="button" class="header-button">
+          <svg class="header-burger-icon" width="32" height="32">
+            <use href="/img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="mobile-menu-navigation">
+        <ul class="header-navigation-list">
+          <li class="header-navigation-item">
+            <a class="header-list-link" href="#">Про нас</a>
+          </li>
+          <li class="header-navigation-item">
+            <a class="header-list-link" href="#">Переваги</a>
+          </li>
+          <li class="header-navigation-item">
+            <a class="header-list-link" href="#">Асортимент</a>
+          </li>
+          <li class="header-navigation-item">
+            <a class="header-list-link" href="#">Галерея</a>
+          </li>
+          <li class="header-navigation-item">
+            <a class="header-list-link" href="#">Відгуки</a>
+          </li>
+          <li class="header-navigation-item">
+            <a class="header-list-link" href="#">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="mobile-menu-address">
+        <ul class="header-address-list">
+          <li class="header-address-item">
+            <a class="header-list-link" href="tel:+380999091122"
+              >+38 (099) 909 11 22</a
+            >
+          </li>
+          <li class="header-address-item">
+            <a class="header-list-link" href="mailto:hello@ecotote.com"
+              >hello@ecotote.com</a
+            >
+          </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+</header>
