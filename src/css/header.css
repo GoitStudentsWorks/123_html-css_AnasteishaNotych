@@ -7,6 +7,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 20px;
+  padding-right: 12px;
 }
 
 .header-logo-link {
@@ -68,6 +70,8 @@
 .mobile-container {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
+  padding-right: 12px;
 }
 
 .mobile-header {
@@ -109,14 +113,29 @@
 /*-----------Tablet---------  */
 
 @media screen and (min-width: 768px) {
+  .header-container {
+    padding-left: 32px;
+    padding-right: 16px;
+  }
+
   .header-menu-navigation {
     margin-bottom: 0px;
+  }
+
+  .mobile-container {
+    padding-left: 32px;
+    padding-right: 16px;
   }
 }
 
 /*-----------Desktop---------  */
 
 @media only screen and (min-width: 1440px) {
+  .header-container {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+
   .header-icon-mobile {
     display: none;
   }
