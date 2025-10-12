@@ -1,0 +1,90 @@
+.feedbacks {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.feedbacks-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #030a06;
+  margin-bottom: 32px;
+}
+
+.feedbacks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.feedbacks-item {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.feedbacks-text {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0.01em;
+  color: #030a06;
+}
+
+.feedbacks-author {
+  font-weight: 600;
+  line-height: 1.6;
+  color: #030a06;
+}
+
+.feedbacks-icon-list {
+  display: flex;
+  gap: 4px;
+}
+
+.feedbacks-icon {
+  fill: #3ac04c;
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .feedbacks {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .feedbacks-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 32px;
+    column-gap: 24px;
+  }
+
+  .feedbacks-item {
+    flex-basis: calc((100% - 24px) / 2);
+    gap: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .feedbacks-title {
+    max-width: 560px;
+    font-size: 48px;
+    margin: 0 auto 80px;
+  }
+
+  .feedbacks-list {
+    flex-wrap: nowrap;
+  }
+  .feedbacks-item {
+    flex-basis: calc((100% - 72px) / 4);
+    justify-content: space-between;
+  }
+
+  .feedbacks-text {
+    min-height: 84px; /* щоб при display: flex; і justify-content: space-between; автори притискались до низу на планшеті та десктопі */
+  }
+}
