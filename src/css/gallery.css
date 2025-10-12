@@ -1,0 +1,228 @@
+/* Gallery Styles - MOBILE FIRST */
+.container {
+  overflow-x: hidden;
+}
+
+.gallery {
+  padding: 32px 0;
+  background: #ebf8ed;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-container {
+  padding: 0 16px;
+}
+
+.gallery-title {
+  text-align: center;
+  font-family: 'Comfortaa';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  margin-bottom: 16px;
+  color: #030a06;
+  width: 288px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-subtitle {
+  text-align: center;
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  letter-spacing: 0;
+  margin-bottom: 32px;
+  color: #030a06;
+  white-space: nowrap;
+}
+
+/* Список з 4 зображень */
+.gallery-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  width: 288px;
+  height: auto;
+  justify-items: center;
+  place-items: center;
+}
+
+.gallery-item {
+  width: 288px;
+  height: 288px;
+  border-radius: 32px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #ebf8ed;
+}
+
+/* TABLET (768px+) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  .gallery {
+    padding: 64px 0;
+  }
+
+  .gallery-container {
+    padding: 0 32px;
+  }
+
+  .gallery-title {
+    font-size: 36px;
+    width: 488px;
+    margin-bottom: 24px;
+  }
+
+  .gallery-subtitle {
+    margin-bottom: 32px;
+  }
+
+  .gallery-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 колонки */
+    grid-template-rows: 338px 338px 338px; /* 3 рядки по 338px */
+    gap: 24px; /* row-gap + column-gap */
+    width: 704px; /* ширина секції */
+    height: auto; /* висота секції */
+    margin: 0 auto;
+    min-height: 1062px;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ЛІВА КОЛОНКА */
+  .gallery-item:nth-child(4) {
+    /* Woman - мала зверху */
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .gallery-item:nth-child(3) {
+    /* Park - велика знизу */
+    grid-column: 1;
+    grid-row: 2 / span 2; /* Займає 2 і 3 рядки */
+  }
+
+  /* ПРАВА КОЛОНКА */
+  .gallery-item:nth-child(2) {
+    /* Man - велика зверху */
+    grid-column: 2;
+    grid-row: 1 / span 2; /* Займає 1 і 2 рядки */
+  }
+
+  .gallery-item:nth-child(1) {
+    /* Bag - мала знизу */
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+
+/* DESKTOP (1440px+) */
+@media (min-width: 1440px) {
+  .gallery {
+    padding: 64px 0;
+    max-width: 1440px;
+  }
+
+  .gallery-container {
+    padding: 0 64px;
+  }
+
+  .gallery-subtitle {
+    font-size: 18px;
+    margin-bottom: 32px;
+    white-space: nowrap;
+    text-align: center;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 29px;
+  }
+
+  .gallery-title {
+    font-size: 48px;
+    margin-bottom: 24px;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 58px;
+  }
+
+  .gallery-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 колонки */
+    grid-template-rows: 420px 420px;
+    gap: 24px;
+    width: 100%;
+    max-width: 1312px;
+    height: 865px;
+    margin: 0 auto;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+  }
+
+  .gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* РОЗТАШУВАННЯ КАРТИНОК */
+  .gallery-item:nth-child(1) {
+    /* Bag - 1 колонка, 2 ряд */
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .gallery-item:nth-child(2) {
+    /* Man - 2 колонка, 1-2 рядки */
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .gallery-item:nth-child(3) {
+    /* Park - 3 колонка, 1-2 рядки */
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+  .gallery-item:nth-child(4) {
+    /* Woman - 1 колонка, 1 ряд */
+    grid-column: 1;
+    grid-row: 1;
+  }
+}
