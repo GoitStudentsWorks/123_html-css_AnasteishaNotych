@@ -75,7 +75,7 @@
 }
 
 /* TABLET (768px+) */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 768px) {
   .gallery {
     padding: 64px 0;
   }

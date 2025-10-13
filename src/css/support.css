@@ -1,276 +1,265 @@
 /* fix */
 
 .section-support {
-    padding: 32px 0;
+  padding: 32px 0;
 }
 
 .support-container-section {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .support-title {
-    font-family: "Comfortaa", sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 0.01em;
-    color: #030a06;
-    margin-bottom: 24px;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: #030a06;
+  margin-bottom: 24px;
 }
 
 .support-subtitle {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;
-    color: #030a06;
-    margin-bottom: 32px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #030a06;
+  margin-bottom: 32px;
 }
 
 .support-form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .support-label-form {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #030a06;
-    margin-bottom: 8px;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #030a06;
+  margin-bottom: 8px;
 }
 
 .support-input-form {
-    font-family: "Fira Sans", sans-serif;
-    border: 1px solid rgba(3, 10, 6, 0.15);
-    background-color: rgba(3, 10, 6, 0.05);
-    border-radius: 6px;
-    width: 100%;
-    height: 42px;
-    padding: 8px 12px;
-    outline: none;
-    transition: border 0.3s, opacity 0.3s;
+  font-family: 'Fira Sans', sans-serif;
+  border: 1px solid rgba(3, 10, 6, 0.15);
+  background-color: rgba(3, 10, 6, 0.05);
+  border-radius: 6px;
+  width: 100%;
+  height: 42px;
+  padding: 8px 12px;
+  outline: none;
+  transition: border 0.3s, opacity 0.3s;
 }
 
 .support-error-message {
-    font-family: "Fira Sans", sans-serif;
-    color: #d64040;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.6;
-    display: none;
+  font-family: 'Fira Sans', sans-serif;
+  color: #d64040;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.6;
+  display: none;
 }
 
 .support-input-form::placeholder {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: rgba(3, 10, 6, 0.6);
-
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(3, 10, 6, 0.6);
 }
 
-
 .support-input-form:not(:placeholder-shown):invalid {
-    border: 1px solid #d64040;
-    color: #d64040;
+  border: 1px solid #d64040;
+  color: #d64040;
 }
 
 .support-input-form:not(:placeholder-shown):valid {
-    border-color: green;
+  border-color: green;
 }
 
-.support-input-form:not(:placeholder-shown):invalid~.error-message {
-    display: block;
+.support-input-form:not(:placeholder-shown):invalid ~ .error-message {
+  display: block;
 }
-
-
 
 .suppot-wrapper-input {
-    max-width: 288px;
-    margin-bottom: 24px;
+  max-width: 288px;
+  margin-bottom: 24px;
 }
 
 .support-user-comment {
-    font-family: "Fira Sans", sans-serif;
-    max-width: 288px;
-    height: 180px;
-    padding: 12px;
-    margin-bottom: 24px;
-    background-color: rgba(3, 10, 6, 0.05);
-    border: 1px solid rgba(3, 10, 6, 0.15);
-    border-radius: 6px;
-    outline: none;
+  font-family: 'Fira Sans', sans-serif;
+  max-width: 288px;
+  height: 180px;
+  padding: 12px;
+  margin-bottom: 24px;
+  background-color: rgba(3, 10, 6, 0.05);
+  border: 1px solid rgba(3, 10, 6, 0.15);
+  border-radius: 6px;
+  outline: none;
+  resize: none;
 }
 
 .support-user-comment::placeholder {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: rgba(3, 10, 6, 0.6);
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(3, 10, 6, 0.6);
 }
 
 .support-button-submit {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.6;
-    color: #fff;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #030a06;
-    border-radius: 6px;
-    padding: 12px 0;
-    max-width: 288px;
-    height: 50px;
-    background: #030a06;
-    margin-bottom: 24px;
-    transition: opacity 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  padding: 12px 0;
+  max-width: 288px;
+  height: 50px;
+  background: #030a06;
+  margin-bottom: 24px;
+  transition: opacity 0.3s;
 }
 
 form:has(:invalid) button {
-    background: #030a06;
-    opacity: 0.2;
-    border: 1px solid #030a06;
-    cursor: not-allowed;
+  background: #030a06;
+  opacity: 0.2;
+  border: 1px solid #030a06;
+  cursor: not-allowed;
 }
 
 .support-button-submit:active {
-    background: #113916;
-    border: 1px solid #113916;
-    opacity: 0.6;
+  background: #113916;
+  border: 1px solid #113916;
+  opacity: 0.6;
 }
 
-
-
 .support-container-img {
-    border-radius: 40px;
-    width: 288px;
-    height: 428px;
-    background-color: #030a06;
-    background-image: url('/img/support/support-mobile.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  border-radius: 40px;
+  width: 288px;
+  height: 428px;
+  background-color: #030a06;
+  background-image: url('/img/support/support-mobile.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    @media screen and (min-resolution: 1x) {
-        background-image: url('/img/support/support-mobile-1x.jpg');
-    }
+  @media screen and (min-resolution: 1x) {
+    background-image: url('/img/support/support-mobile-1x.jpg');
+  }
 
-    @media screen and (min-resolution: 2x) {
-        background-image: url('/img/support/support-mobile-2x.jpg');
-    }
+  @media screen and (min-resolution: 2x) {
+    background-image: url('/img/support/support-mobile-2x.jpg');
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .section-support {
-        padding: 64px 0;
+  .section-support {
+    padding: 64px 0;
+  }
+
+  .support-title {
+    width: 468px;
+  }
+
+  .suppot-wrapper-input {
+    max-width: 704px;
+  }
+
+  .support-user-comment {
+    max-width: 704px;
+  }
+
+  .support-button-submit {
+    width: 249px;
+    height: 50px;
+  }
+
+  .support-button-submit:hover {
+    opacity: 0.5;
+  }
+
+  .support-button-submit:focus {
+    opacity: 0.5;
+  }
+
+  .support-container-img {
+    width: 704px;
+    height: 428px;
+    background-image: url('/img/support/support-tablet.jpg');
+
+    @media screen and (min-resolution: 1x) {
+      background-image: url('/img/support/support-tablet-1x.jpg');
     }
 
-    .support-title {
-        width: 468px;
+    @media screen and (min-resolution: 2x) {
+      background-image: url('/img/support/support-tablet-2x.jpg');
     }
-
-    .suppot-wrapper-input {
-        max-width: 704px;
-        ;
-    }
-
-    .support-user-comment {
-        max-width: 704px;
-    }
-
-    .support-button-submit {
-        width: 249px;
-        height: 50px;
-    }
-
-
-    .support-button-submit:hover {
-        opacity: 0.5;
-    }
-
-    .support-button-submit:focus {
-        opacity: 0.5;
-    }
-
-    .support-container-img {
-        width: 704px;
-        height: 428px;
-        background-image: url('/img/support/support-tablet.jpg');
-
-        @media screen and (min-resolution: 1x) {
-            background-image: url('/img/support/support-tablet-1x.jpg');
-        }
-
-        @media screen and (min-resolution: 2x) {
-            background-image: url('/img/support/support-tablet-2x.jpg');
-        }
-    }
+  }
 }
 
-
 @media screen and (min-width: 1440px) {
-    .section-support {
-        padding: 64px 0;
+  .section-support {
+    padding: 64px 0;
+  }
+
+  .support-container-section {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .support-wrapper-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .support-title {
+    font-size: 48px;
+    width: 644px;
+  }
+
+  .suppot-wrapper-input {
+    max-width: 644px;
+  }
+
+  .support-user-comment {
+    max-width: 644px;
+  }
+
+  .support-button-submit {
+    width: 198px;
+    height: 50px;
+  }
+
+  .support-button-submit:hover {
+    opacity: 0.5;
+  }
+
+  .support-button-submit:focus {
+    opacity: 0.5;
+  }
+
+  .support-container-img {
+    width: 644px;
+    height: 767px;
+    background-image: url('/img/support/support-desktop.jpg');
+
+    @media screen and (min-resolution: 1x) {
+      background-image: url('/img/support/support-desktop-1x.jpg');
     }
 
-    .support-container-section {
-        display: flex;
-        flex-direction: row;
-        gap: 24px;
+    @media screen and (min-resolution: 2x) {
+      background-image: url('/img/support/support-desktop-2x.jpg');
     }
-
-    .support-wrapper-section {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .support-title {
-        font-size: 48px;
-        width: 644px;
-    }
-
-    .suppot-wrapper-input {
-        max-width: 644px;
-        ;
-    }
-
-    .support-user-comment {
-        max-width: 644px;
-    }
-
-    .support-button-submit {
-        width: 198px;
-        height: 50px;
-    }
-
-    .support-button-submit:hover {
-        opacity: 0.5;
-    }
-
-    .support-button-submit:focus {
-        opacity: 0.5;
-    }
-
-    .support-container-img {
-        width: 644px;
-        height: 767px;
-        background-image: url('/img/support/support-desktop.jpg');
-
-        @media screen and (min-resolution: 1x) {
-            background-image: url('/img/support/support-desktop-1x.jpg');
-        }
-
-        @media screen and (min-resolution: 2x) {
-            background-image: url('/img/support/support-desktop-2x.jpg');
-        }
-
-
-    }
+  }
 }
