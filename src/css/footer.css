@@ -1,9 +1,8 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 .footer {
-  max-width: 100%;
-  background-color: #75D281;
+  background-color: #75d281;
   padding: 48px 0px 64px 0px;
 }
 
@@ -19,9 +18,9 @@ html{
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 280px;
+  max-width: 280px;
   height: 121px;
-  fill: #030A06;
+  fill: #030a06;
 }
 .footer-link-logo img {
   width: 281px;
@@ -39,7 +38,7 @@ html{
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-  color: #030A06;
+  color: #030a06;
   white-space: nowrap;
 }
 .navigation-link:hover,
@@ -47,7 +46,7 @@ html{
   text-decoration: underline;
 }
 .navigation-link:active {
-  color: #3AC04C;
+  color: #3ac04c;
 }
 
 .footer-socials {
@@ -61,7 +60,7 @@ html{
   justify-content: center;
   width: 32px;
   height: 32px;
-  fill: #030A06;
+  fill: #030a06;
   transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-socials-link:hover,
@@ -79,7 +78,7 @@ html{
 
 .footer-info {
   display: flex;
-  border-top: 1px solid #030A0626;
+  border-top: 1px solid #030a0626;
   padding-top: 24px;
   flex-direction: column;
   align-items: center;
@@ -100,7 +99,7 @@ html{
   text-decoration: underline;
 }
 .footer-contacts-link:active {
-  color: #3AC04C;
+  color: #3ac04c;
 }
 .footer-rights {
   font-weight: 400;
@@ -118,7 +117,7 @@ html{
     margin-bottom: 24px;
   }
   .footer-link-logo {
-    width: 164px;
+    max-width: 164px;
     height: 70px;
   }
   .footer-link-logo img {
