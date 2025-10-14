@@ -27,7 +27,7 @@
   letter-spacing: 0.01em;
   margin-bottom: 16px;
   color: #030a06;
-  width: 288px;
+  max-width: 288px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -86,7 +86,7 @@
 
   .gallery-title {
     font-size: 36px;
-    width: 488px;
+    max-width: 488px;
     margin-bottom: 24px;
   }
 
@@ -170,7 +170,7 @@
   .gallery-title {
     font-size: 48px;
     margin-bottom: 24px;
-    width: 768px;
+    max-width: 768px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
