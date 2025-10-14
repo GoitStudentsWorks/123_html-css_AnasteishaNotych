@@ -84,6 +84,8 @@ html {
 .footer-contacts-link {
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.6;
+  color: #030a06;
 }
 
 .footer-rights {
@@ -152,7 +154,7 @@ html {
     margin-bottom: 16px;
   }
 
-  .footer-menu-link {
+  .footer-contacts-link {
     position: relative;
     transition: color 0.3s ease, opacity 0.3s ease, border 0.3s ease;
   }
