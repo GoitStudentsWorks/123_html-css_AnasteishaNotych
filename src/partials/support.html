@@ -1,28 +1,54 @@
 <section class="section-support" id="support">
-    <div class="container support-container-section">
-        <div class="support-wrapper-section">
-            <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
-            <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
-            <form class="support-form">
-
-                <label class="support-label-form" for="user-name">Ім'я</label>
-                <div class="suppot-wrapper-input">
-                    <input class="support-input-form" type="text" name="user-name" id="user-name" placeholder="Іван" required
-                        minlength="5" maxlength="64">
-                    <span class="support-error-message">Error</span>
-                </div>
-                <label class="support-label-form" for="user-imail">Електронна пошта</label>
-                <div class="suppot-wrapper-input">
-                    <input class="support-input-form" type="email" name="user-imail" placeholder="hello@ecotote.com" required
-                        minlength="5" maxlength="64" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
-                    <span class="support-error-message">Error</span>
-                </div>
-                <label class="support-label-form" for="comment-user">Повідомлення</label>
-                <textarea class="support-user-comment" name="comment" id="comment-user"
-                    placeholder="Введіть своє повідомлення..." maxlength="500"></textarea>
-                <button class="support-button-submit" type="submit">Надіслати</button>
-            </form>
+  <div class="container support-container-section">
+    <div class="support-wrapper-section">
+      <h2 class="support-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
+      <form class="support-form">
+        <label class="support-label-form" for="user-name">Ім'я</label>
+        <div class="suppot-wrapper-input">
+          <input
+            class="support-input-form"
+            type="text"
+            name="user-name"
+            id="user-name"
+            placeholder="Іван"
+            required
+            minlength="5"
+            maxlength="64"
+          />
+          <span class="support-error-message">Error</span>
         </div>
-        <div class="support-container-img"></div>
+        <label class="support-label-form" for="user-imail"
+          >Електронна пошта</label
+        >
+        <div class="suppot-wrapper-input">
+          <input
+            class="support-input-form"
+            type="email"
+            name="user-imail"
+            id="user-imail"
+            placeholder="hello@ecotote.com"
+            required
+            minlength="5"
+            maxlength="64"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          />
+          <span class="support-error-message">Error</span>
+        </div>
+        <label class="support-label-form" for="comment-user"
+          >Повідомлення</label
+        >
+        <textarea
+          class="support-user-comment"
+          name="comment-user"
+          id="comment-user"
+          placeholder="Введіть своє повідомлення..."
+          maxlength="500"
+        >
+        </textarea>
+        <button class="support-button-submit" type="submit">Надіслати</button>
+      </form>
     </div>
+    <div class="support-container-img"></div>
+  </div>
 </section>

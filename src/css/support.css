@@ -168,7 +168,7 @@ form:has(:invalid) button {
   }
 
   .support-title {
-    width: 468px;
+    max-width: 468px;
   }
 
   .suppot-wrapper-input {
@@ -225,7 +225,7 @@ form:has(:invalid) button {
 
   .support-title {
     font-size: 48px;
-    width: 644px;
+    max-width: 644px;
   }
 
   .suppot-wrapper-input {
