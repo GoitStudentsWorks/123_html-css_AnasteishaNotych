@@ -148,17 +148,17 @@ form:has(:invalid) button {
   width: 288px;
   height: 428px;
   background-color: #030a06;
-  background-image: url('/img/support/support-mobile.jpg');
+  background-image: url('/img/support/support-mobile.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 
   @media screen and (min-resolution: 1x) {
-    background-image: url('/img/support/support-mobile-1x.jpg');
+    background-image: url('/img/support/support-mobile-1x.webp');
   }
 
   @media screen and (min-resolution: 2x) {
-    background-image: url('/img/support/support-mobile-2x.jpg');
+    background-image: url('/img/support/support-mobile-2x.webp');
   }
 }
 
@@ -195,14 +195,14 @@ form:has(:invalid) button {
   .support-container-img {
     width: 704px;
     height: 428px;
-    background-image: url('/img/support/support-tablet.jpg');
+    background-image: url('/img/support/support-tablet.webp');
 
     @media screen and (min-resolution: 1x) {
-      background-image: url('/img/support/support-tablet-1x.jpg');
+      background-image: url('/img/support/support-tablet-1x.webp');
     }
 
     @media screen and (min-resolution: 2x) {
-      background-image: url('/img/support/support-tablet-2x.jpg');
+      background-image: url('/img/support/support-tablet-2x.webp');
     }
   }
 }
@@ -252,14 +252,14 @@ form:has(:invalid) button {
   .support-container-img {
     width: 644px;
     height: 767px;
-    background-image: url('/img/support/support-desktop.jpg');
+    background-image: url('/img/support/support-desktop.webp');
 
     @media screen and (min-resolution: 1x) {
-      background-image: url('/img/support/support-desktop-1x.jpg');
+      background-image: url('/img/support/support-desktop-1x.webp');
     }
 
     @media screen and (min-resolution: 2x) {
-      background-image: url('/img/support/support-desktop-2x.jpg');
+      background-image: url('/img/support/support-desktop-2x.webp');
     }
   }
 }
