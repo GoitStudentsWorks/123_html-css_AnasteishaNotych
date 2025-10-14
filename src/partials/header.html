@@ -55,8 +55,14 @@
         </li>
       </ul>
     </address>
-    <button type="button" class="header-button" data-menu-open>
-      <svg class="header-burger-icon" width="32" height="32">
+    <button
+      type="button"
+      class="header-button"
+      aria-label="Відкрити меню"
+      aria-expanded="false"
+      data-menu-open
+    >
+      <svg class="header-burger-icon" width="32" height="32" aria-hidden="true">
         <use href="/img/sprite.svg#icon-menu"></use>
       </svg>
     </button>
@@ -74,8 +80,18 @@
             height="36"
           />
         </a>
-        <button type="button" class="header-button" data-menu-close>
-          <svg class="header-close-icon" width="32" height="32">
+        <button
+          type="button"
+          class="header-button"
+          data-menu-close
+          aria-label="Закрити меню"
+        >
+          <svg
+            class="header-close-icon"
+            width="32"
+            height="32"
+            aria-hidden="true"
+          >
             <use href="/img/sprite.svg#icon-close"></use>
           </svg>
         </button>
